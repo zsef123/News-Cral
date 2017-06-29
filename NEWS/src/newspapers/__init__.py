@@ -8,3 +8,4 @@ from . import Khanews
 from . import Medicaltimes
 from . import Medifonews
 from . import Nursenews
+from . import Chosun
