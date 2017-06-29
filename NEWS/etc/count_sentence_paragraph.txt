@@ -1,0 +1,35 @@
+khanews setences : 610
+khanews Paragraphs : 520
+
+간호신문 setences : 501
+간호신문 Paragraphs : 281
+
+메디칼타임즈 setences : 682
+메디칼타임즈 Paragraphs : 552
+
+메디포 setences : 667
+메디포 Paragraphs : 609
+
+의협신문 setences : 1837
+의협신문 Paragraphs : 1351
+
+헬스코리아 setences : 598
+헬스코리아 Paragraphs : 491
+
+메디파나 setences : 699
+메디파나 Paragraphs : 642
+
+의사신문 setences : 998
+의사신문 Paragraphs : 701
+
+조선 setences : 1361
+조선 Paragraphs : 885
+
+중앙 setences : 1804
+중앙 Paragraphs : 685
+
+동아 setences : 1185
+동아 Paragraphs : 624
+
+빅카인즈 setences : 873
+빅카인즈 Paragraphs : 346

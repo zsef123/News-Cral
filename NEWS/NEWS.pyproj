@@ -80,12 +80,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="etc\" />
     <Folder Include="src\" />
     <Folder Include="src\utils\" />
     <Folder Include="src\newspapers\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="etc\count_sentence_paragraph.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="etc\morph_check.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="readme.md">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
