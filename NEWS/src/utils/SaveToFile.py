@@ -13,8 +13,16 @@ class ArticleSave(object):
         return 1
     def __init__(self, fileDir, name):
         self.name = name
+        self.dir = fileDir
         self.sefFileDir(fileDir)
+        self.excelFileDir = self.fileDir+"\\articles.xlsx"
         return
+    def getDirectory(self):
+        return self.dir
+    def getFileDir(self):
+        return self.fileDir
+    def getExcelFileDir(self):
+        return self.excelFileDir
 
     def saveToTxt(self, articleDatas):
         if len(articleDatas) != 4:
@@ -36,8 +44,9 @@ class ArticleSave(object):
             articleTxt = re.search("<text>[\w\W]*<\/text>", text).group()[7: -8]
         articleID = articleFileName[:-4]
         return (articleID, articleDate, articleTitle, articleTxt)
-    def txtMergeToExcel(self, xlsxFileName):
-        workbook = xlsxwriter.Workbook(self.fileDir+"\\"+ xlsxFileName + '.xlsx')
+    def txtMergeToExcel(self, xlsxFileName="articles"):
+        self.excelFileDir = self.fileDir+"\\"+ xlsxFileName + '.xlsx'
+        workbook = xlsxwriter.Workbook(self.excelFileDir)
         worksheet = workbook.add_worksheet()
         bold = workbook.add_format({'bold': True})
         worksheet.write('A1', 'ID', bold)
